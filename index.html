@@ -60,6 +60,10 @@
       }
       li {
         margin-bottom: 8px;
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 4px 10px;
       }
       a {
         color: #0089cb;
@@ -71,6 +75,14 @@
       .lang {
         color: #888;
         font-size: 0.9em;
+      }
+      /* Version + publish date, written by tools/update-index.py */
+      .doc-meta {
+        margin-left: auto;
+        color: #999;
+        font-size: 0.8rem;
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
       }
       footer {
         margin-top: 60px;
@@ -148,6 +160,10 @@
         color: white;
       }
       @media (max-width: 600px) {
+        .doc-meta {
+          margin-left: 0;
+          flex-basis: 100%;
+        }
         .url-cell {
           flex-direction: column;
           align-items: flex-start;
@@ -178,14 +194,17 @@
         <li>
           <a href="brochures/brochure-AB-AG-en.pdf">AimGel Product Line</a>
           <span class="lang">English</span>
+          <span class="doc-meta">v2.0.1 &middot; Updated 2026-09-14</span>
         </li>
         <li>
           <a href="brochures/brochure-AB-AG-sc.pdf">AimGel Product Line</a>
           <span class="lang">简体中文</span>
+          <span class="doc-meta">v1.0.9 &middot; Updated 2026-03-11</span>
         </li>
         <li>
           <a href="brochures/brochure-AB-CL-en.pdf">Cell Product Line</a>
           <span class="lang">English</span>
+          <span class="doc-meta">v1.0.0 &middot; Updated 2026-03-17</span>
         </li>
       </ul>
     </section>
@@ -197,6 +216,7 @@
         <li>
           <a href="catalogues/catalogue-AB-en.pdf">Company Catalogue</a>
           <span class="lang">English</span>
+          <span class="doc-meta">v1.0.1 &middot; Updated 2026-01-07</span>
         </li>
       </ul>
     </section>
@@ -210,32 +230,38 @@
             >AimGel Human T Cell Activator</a
           >
           <span class="lang">English</span>
+          <span class="doc-meta">v2.0.1 &middot; Updated 2026-09-11</span>
         </li>
         <li>
           <a href="protocols/protocol-ANK01-H-en.pdf"
             >AimGel Human NK Cell Activator</a
           >
           <span class="lang">English</span>
+          <span class="doc-meta">v2.0.0 &middot; Updated 2026-09-10</span>
         </li>
         <li>
           <a href="protocols/protocol-ATC01-M-en.pdf"
             >AimGel Mouse T Cell Activator</a
           >
           <span class="lang">English</span>
+          <span class="doc-meta">v1.0.0 &middot; Updated 2026-09-11</span>
         </li>
         <li>
           <a href="protocols/protocol-ATC01-D-en.pdf"
             >AimGel Dog T Cell Activator</a
           >
           <span class="lang">English</span>
+          <span class="doc-meta">v1.0.0 &middot; Updated 2026-09-11</span>
         </li>
         <li>
           <a href="protocols/protocol-AVI0112-en.pdf">Aim-Core</a>
           <span class="lang">English</span>
+          <span class="doc-meta">v2.0.0 &middot; Updated 2026-09-10</span>
         </li>
         <li>
           <a href="protocols/protocol-AVI0112-sc.pdf">Aim-Core</a>
           <span class="lang">简体中文</span>
+          <span class="doc-meta">v1.0.1 &middot; Updated 2026-09-10</span>
         </li>
       </ul>
     </section>
